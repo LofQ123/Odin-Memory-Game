@@ -74,7 +74,7 @@ export default function MainMenu({ setGameState, musicOn, toggleMusic, setShowSe
       </div>
       <div className="mainMenu_footer">
         <a href="https://github.com/LofQ123" target="_blank">
-          <img className="gitLogo" src="./assets/gitLogo.svg" />
+          <img className="gitLogo" src="./src/assets/gitLogo.svg" />
         </a>
         <div>Ruslan Alexeev</div>
       </div>

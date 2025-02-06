@@ -1,3 +1,32 @@
+import { fb_4073873 } from "src/assets/fallback/4073873.png";
+import { fb_5811994 } from "src/assets/fallback/5811994.png";
+import { fb_6073502 } from "src/assets/fallback/6073502.png";
+import { fb_6078473 } from "src/assets/fallback/6078473.png";
+import { fb_6081515 } from "src/assets/fallback/6081515.png";
+import { fb_6116760 } from "src/assets/fallback/6116760.png";
+import { fb_6141852 } from "src/assets/fallback/6141852.png";
+import { fb_7718312 } from "src/assets/fallback/7718312.png";
+import { fb_7728546 } from "src/assets/fallback/7728546.png";
+import { fb_7738583 } from "src/assets/fallback/7738583.png";
+import { fb_7769801 } from "src/assets/fallback/7769801.png";
+import { fb_7896697 } from "src/assets/fallback/7896697.png";
+
+const fallbacks = {
+  "4073873": fb_4073873,
+  "5811994": fb_5811994,
+  "6073502": fb_6073502,
+  "6078473": fb_6078473,
+  "6081515": fb_6081515,
+  "6116760": fb_6116760,
+  "6141852": fb_6141852,
+  "7718312": fb_7718312,
+  "7728546": fb_7728546,
+  "7738583": fb_7738583,
+  "7769801": fb_7769801,
+  "7896697": fb_7896697,
+}
+
+
 export async function getImageURL (pixabayId) {
   const cachedURL = localStorage.getItem(`image_${pixabayId}`);
 
@@ -22,7 +51,8 @@ export async function getImageURL (pixabayId) {
     const response = await fetch(`https://pixabay.com/api/?key=48616540-5f0061190e7a3d1e4eb74b784&id=${pixabayId}&image_type=illustration&orientation=vertical`)
     
     if(!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+      console.log("getting fallback")
+      return fallbacks[pixabayId]
     }
 
     const data = await response.json()

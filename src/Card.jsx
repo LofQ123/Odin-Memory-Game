@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import cardBack from "/public/259e49dc4d980310ccf0e9656ab0cd42.jpg";
 
 Card.propTypes = {
   id: PropTypes.string,
@@ -27,7 +28,7 @@ export default function Card({ id, url, isFlipped, onClick, imageReady }) {
           </div>
           <div className="card-Back">
             <img
-              src="./public/259e49dc4d980310ccf0e9656ab0cd42.jpg"
+              src={cardBack}
               alt="Back of the card"
             />
           </div>

@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 import Card from "./Card";
 import { getImageURL } from "./imageAPI";
 import { cardFaces } from "./cardFaces";
-import card_flip from "./assets/card_flip.mp3";
-import positive_bleep from "./assets/positive_bleep.mp3";
-import negative_bleep from "./assets/negative_bleep.mp3";
-import win_sound from "./assets/winSound.wav";
+import trophy from "/public/trophy-153395.svg";
+import settingsIcon from "/public/settingsIcon.svg";
+
 
 export default function GameOn({playSFX, sfxRef_shuffle, sfxRef_gameWon, sfxRef_negativeBleep, sfxRef_positiveBleep, setShowSettings}) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -171,7 +170,7 @@ export default function GameOn({playSFX, sfxRef_shuffle, sfxRef_gameWon, sfxRef_
   return (
     <>
       <div className={`header`}>
-        <img className="header_btn" src="./public/settingsIcon.svg" alt="Settings icon" onClick={() => setShowSettings(true)}/>
+        <img className="header_btn" src={settingsIcon} alt="Settings icon" onClick={() => setShowSettings(true)}/>
         <div className="title">Animal Count</div>
         <div
           className={`score ${
@@ -272,7 +271,7 @@ export default function GameOn({playSFX, sfxRef_shuffle, sfxRef_gameWon, sfxRef_
             </div>
             <div className={`gameOver_board`}> 
               <div className={'gameOver_message'}>Great job! You Won!</div>
-              <img src="./public/trophy-153395.svg" />
+              <img src={trophy} />
               <div className={`gameOver_btn`}>
                 <div onClick={handlePlayAgainClick}>Play again?</div>
               </div>

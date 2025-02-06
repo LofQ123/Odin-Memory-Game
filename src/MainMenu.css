@@ -2,6 +2,186 @@
   user-select: none;
 }
 
+@media (min-width: 1025px) {
+  .mainMenu_title {
+    font-size: 140px;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    margin-bottom: 100px;  
+  }
+
+  .mainMenu_container {
+    width: 400px;
+    padding: 20px 0;  
+  }
+
+  .mainMenu_container.credits {
+    width: 700px;
+  }
+
+  .mainMenu_start,
+  .mainMenu_credits,
+  .mainMenu_music,
+  .credits_backBtn {
+    font-size: 60px;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+  }
+
+  .mainMenu_credits.raised {
+    padding-bottom: 100px;
+  }
+
+  .credits_content {
+    font-size: 35px;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);  
+  }
+
+  .credits_backBtn {
+    padding-top: 40px;
+  }
+
+  .credits_content>a {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+  }
+
+  .mainMenu_footer {
+    font-size: 30px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    height: 40px;
+    bottom: 20px;
+    left: 20px;
+    gap: 10px;
+  }
+
+  .mainMenu_footer>a {
+    height: 40px;
+    width: 40px; 
+  }
+
+  .gitLogo {
+    height: 40px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .mainMenu_title {
+    font-size: 100px;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    margin-bottom: 10px;  
+  }
+
+  .mainMenu_container {
+    width: 300px;
+    padding: 20px 0;  
+  }
+
+  .mainMenu_container.credits {
+    width: 500px;
+  }
+
+  .mainMenu_start,
+  .mainMenu_credits,
+  .mainMenu_music,
+  .credits_backBtn {
+    font-size: 30px;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+  }
+
+  .mainMenu_credits.raised {
+    padding-bottom: 40px;
+  }
+
+  .credits_content {
+    font-size: 25px;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);  
+  }
+
+  .credits_backBtn {
+    padding-top: 30px;
+  }
+
+  .credits_content>a {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+  }
+
+  .mainMenu_footer {
+    font-size: 20px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    height: 30px;
+    bottom: 20px;
+    left: 20px;
+    gap: 10px;
+  }
+
+  .mainMenu_footer>a {
+    height: 30px;
+    width: 30px; 
+  }
+
+  .gitLogo {
+    height: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mainMenu_title {
+    font-size: 140px;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    margin-bottom: 100px;  
+  }
+
+  .mainMenu_container {
+    width: 400px;
+    padding: 20px 0;  
+  }
+
+  .mainMenu_container.credits {
+    width: 700px;
+  }
+
+  .mainMenu_start,
+  .mainMenu_credits,
+  .mainMenu_music,
+  .credits_backBtn {
+    font-size: 60px;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+  }
+
+  .mainMenu_credits.raised {
+    padding-bottom: 100px;
+  }
+
+  .credits_content {
+    font-size: 35px;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);  
+  }
+
+  .credits_backBtn {
+    padding-top: 40px;
+  }
+
+  .credits_content>a {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+  }
+
+  .mainMenu_footer {
+    font-size: 30px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    height: 40px;
+    bottom: 20px;
+    left: 20px;
+    gap: 10px;
+  }
+
+  .mainMenu_footer>a {
+    height: 40px;
+    width: 40px; 
+  }
+
+  .gitLogo {
+    height: 40px;
+  }
+}
+
 .mainMenu {
   height: 100vh;
   width: 100vw;
@@ -15,9 +195,6 @@
 }
 
 .mainMenu_title {
-  font-size: 140px;
-  -webkit-text-stroke: 3px rgb(0, 0, 0);
-  margin-bottom: 100px;
   color: rgb(255, 102, 0);
   animation: fadeIn 2s ease, animate 1s ease-in-out infinite;
   animation-direction: alternate;
@@ -26,13 +203,10 @@
 .mainMenu_container {
   background: rgba(0, 0, 0, 0.397);
   height: auto;
-  width: 400px;
-  padding: 20px 0;
   animation: fadeIn 3s ease;
 }
 
 .mainMenu_container.credits {
-  width: 700px;
   padding: 0;
 }
 
@@ -40,8 +214,6 @@
 .mainMenu_credits,
 .mainMenu_music,
 .credits_backBtn {
-  font-size: 60px;
-  -webkit-text-stroke: 3px rgb(0, 0, 0);
   transition: transform 0.2s ease;
 }
 
@@ -87,48 +259,28 @@
 
 .mainMenu_credits.raised {
   pointer-events: none;
-  padding-bottom: 100px;
-}
-
-.credits_content {
-  font-size: 35px;
-  -webkit-text-stroke: 2px rgb(0, 0, 0);
-}
-
-.credits_backBtn {
-  padding-top: 40px;
 }
 
 .credits_content>a {
   text-decoration: underline;
   text-decoration-color: white;
   color: inherit;
-  -webkit-text-stroke: 2px rgb(0, 0, 0);
 }
 
 .mainMenu_footer {
   display: flex;
-  font-size: 30px;
-  -webkit-text-stroke: 1px rgb(0, 0, 0);
   align-items: center;
-  height: 40px;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  gap: 10px;
   background: rgba(0, 0, 0, 0.397);
 }
 
 .mainMenu_footer>a {
-  height: 40px;
-  width: 40px; 
   text-decoration: none;
   color: inherit;
 }
 
 .gitLogo {
   border-radius: 50%;
-  height: 40px;
 }
 
 .invisible {

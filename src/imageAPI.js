@@ -55,7 +55,7 @@ export async function getImageURL (pixabayId) {
   
   console.log("Addressing API")
   try{ // Get new URL from API
-    const response = await fetchWithTimeout(`https://.com/api/?key=48616540-5f0061190e7a3d1e4eb74b784&id=${pixabayId}&image_type=illustration&orientation=vertical`)
+    const response = await fetchWithTimeout(`https://pixabay.com/api/?key=48616540-5f0061190e7a3d1e4eb74b784&id=${pixabayId}&image_type=illustration&orientation=vertical`)
     
     if(!response.ok) {
       throw new Error("API response not OK")

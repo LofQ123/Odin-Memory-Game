@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import gitLogo from "/public/gitLogo.svg"
 
 MainMenu.propTypes = {
   setGameState: PropTypes.func,
@@ -74,7 +75,7 @@ export default function MainMenu({ setGameState, musicOn, toggleMusic, setShowSe
       </div>
       <div className="mainMenu_footer">
         <a href="https://github.com/LofQ123" target="_blank">
-          <img className="gitLogo" src="./public/gitLogo.svg" />
+          <img className="gitLogo" src={gitLogo} />
         </a>
         <div>Ruslan Alexeev</div>
       </div>

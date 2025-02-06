@@ -1,0 +1,140 @@
+* {
+  user-select: none;
+}
+
+.mainMenu {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./assets/orig.webp");
+  background-size: cover;
+  font-family: "Jua", serif;
+}
+
+.mainMenu_title {
+  font-size: 140px;
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
+  margin-bottom: 100px;
+  color: rgb(255, 102, 0);
+  animation: fadeIn 2s ease, animate 1s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+.mainMenu_container {
+  background: rgba(0, 0, 0, 0.397);
+  height: auto;
+  width: 400px;
+  padding: 20px 0;
+  animation: fadeIn 3s ease;
+}
+
+.mainMenu_container.credits {
+  width: 700px;
+  padding: 0;
+}
+
+.mainMenu_start,
+.mainMenu_credits,
+.mainMenu_music,
+.credits_backBtn {
+  font-size: 60px;
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
+  transition: transform 0.2s ease;
+}
+
+.mainMenu_start:hover,
+.mainMenu_credits:hover,
+.mainMenu_music:hover,
+.credits_backBtn:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: transform 0.2s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px)
+  }
+  100% {
+    transform: translateY(10px)
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%
+  }
+}
+
+.mainMenu_credits.raised {
+  pointer-events: none;
+  padding-bottom: 100px;
+}
+
+.credits_content {
+  font-size: 35px;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.credits_backBtn {
+  padding-top: 40px;
+}
+
+.credits_content>a {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: inherit;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.mainMenu_footer {
+  display: flex;
+  font-size: 30px;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  align-items: center;
+  height: 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.397);
+}
+
+.mainMenu_footer>a {
+  height: 40px;
+  width: 40px; 
+  text-decoration: none;
+  color: inherit;
+}
+
+.gitLogo {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.invisible {
+  opacity: 0
+}
+
+.fadeOut {
+  animation: fadeOut 1s ease;
+}

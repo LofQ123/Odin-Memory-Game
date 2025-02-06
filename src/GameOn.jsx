@@ -171,7 +171,7 @@ export default function GameOn({playSFX, sfxRef_shuffle, sfxRef_gameWon, sfxRef_
   return (
     <>
       <div className={`header`}>
-        <img className="header_btn" src="./assets/settingsIcon.svg" alt="Settings icon" onClick={() => setShowSettings(true)}/>
+        <img className="header_btn" src="./public/settingsIcon.svg" alt="Settings icon" onClick={() => setShowSettings(true)}/>
         <div className="title">Animal Count</div>
         <div
           className={`score ${
@@ -272,7 +272,7 @@ export default function GameOn({playSFX, sfxRef_shuffle, sfxRef_gameWon, sfxRef_
             </div>
             <div className={`gameOver_board`}> 
               <div className={'gameOver_message'}>Great job! You Won!</div>
-              <img src="./src/assets/trophy-153395.svg" />
+              <img src="./public/trophy-153395.svg" />
               <div className={`gameOver_btn`}>
                 <div onClick={handlePlayAgainClick}>Play again?</div>
               </div>

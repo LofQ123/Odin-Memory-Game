@@ -27,7 +27,7 @@ export default function Card({ id, url, isFlipped, onClick, imageReady }) {
           </div>
           <div className="card-Back">
             <img
-              src="./src/assets/259e49dc4d980310ccf0e9656ab0cd42.jpg"
+              src="./public/259e49dc4d980310ccf0e9656ab0cd42.jpg"
               alt="Back of the card"
             />
           </div>

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
+* {
+  color: white;
+}
 
 #root {
   width: 100%;
